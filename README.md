@@ -1,5 +1,55 @@
 
-Welcome to the CFD Online Lesson Repository
+##Welcome to CFD Python
+
+Hello! Welcome to the **12 steps to Navier-Stokes**. This is a practical module that is used in the beginning of an interactive Computational Fluid Dynamics (CFD) course taught by [Prof. Lorena Barba](lorenabarba.com) between 2009 and 2013 at Boston University (Prof. Barba since moved to the George Washington University). The course assumes only basic programming knowledge (in any language) and of course some foundation in partial differential equations and fluid mechanics. The practical module was inspired by the ideas of Dr. Rio Yokota, who was a post-doc in Prof. Barba's lab, and has been refined by Prof. Barba and her students over several semesters teaching the course. The course is taught entirely using Python and students who don't know Python just learn as we work through the module.
+
+###Installing Python
+
+The core of this mini-course is built around [Jupyter(formerly IPython) notebooks](https://jupyter-notebook.readthedocs.org/en/latest/notebook.html), an interactive computational environment that is run in a web-browser.
+
+
+####Anaconda
+We *highly* recommend that you install the [Anaconda Python Distribution](http://docs.continuum.io/anaconda/install).
+
+You can download and install Anaconda on Windows, OSX and Linux. To ensure that it's up to date, run (in a terminal)
+
+```Bash
+conda update conda
+conda update jupyter numpy sympy scipy matplotlib
+```
+
+If you prefer Miniconda (a mini version of Anaconda), to install all the necessary libraries to follow this course, run (in a terminal)
+
+```Bash
+conda update conda
+conda install jupyter
+conda install numpy scipy sympy matplotlib
+```
+
+
+####Without Anaconda
+If you already have Python installed, you can install the notebooks using pip
+
+```Bash
+pip install jupyter
+```
+
+Please also make sure that you have the necessary libraries installed by running
+
+```Bash
+pip install numpy scipy sympy matplotlib
+```
+
+
+###Running a notebook server
+
+Once jupyter is installed, just open up a terminal and then run 
+
+```Bash
+jupyter notebook
+```
+
+to start up a jupyter session in your browser!
 
 Lessons
 -------
@@ -18,6 +68,5 @@ Lessons
 * [Defining Function in Python](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/11_Defining_Function_in_Python.ipynb)
 * [Step 9](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/12_Step_9.ipynb)
 * [Step 10](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/13_Step_10.ipynb)
-* [Optimizing Loops with Numba](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/14_Optimizing_Loops_with_Numba.ipynb)
 * [Step 11](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/15_Step_11.ipynb)
 * [Step 12](http://nbviewer.ipython.org/urls/github.com/barbagroup/CFDPython/blob/master/lessons/16_Step_12.ipynb)
